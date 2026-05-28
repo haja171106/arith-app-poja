@@ -13,22 +13,22 @@ public class arith {
     private final ArithService arithService;
 
     @GetMapping("/add")
-    public Double add(@RequestParam Double a, @RequestParam Double b) {
+    public int add(@RequestParam int a, @RequestParam int b) {
         return arithService.add(a, b);
     }
 
     @GetMapping("/minus")
-    public Double minus(@RequestParam Double a, @RequestParam Double b) {
+    public int minus(@RequestParam int a, @RequestParam int b) {
         return arithService.minus(a, b);
     }
 
-    @GetMapping("/devide")
-    public Double divide(@RequestParam Double a, @RequestParam Double b) {
+    @GetMapping("/divide")
+    public double divide(@RequestParam int a, @RequestParam int b) {
         return arithService.divide(a, b);
     }
 
     @GetMapping("/multiply")
-    public Double multiply(@RequestParam Double a, @RequestParam Double b) {
+    public int multiply(@RequestParam int a, @RequestParam int b) {
         return arithService.multiply(a, b);
     }
 }
